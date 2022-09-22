@@ -4,16 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Understanding TypeScript</title>
+  <title>Select and Share</title>
   <script src="dist/bundle.js" defer></script>
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
   <div id="map">
-    <p>Enter an address</p>
+    <p>Enter Coordinates</p>
   </div>
-  <form>
-    <input type="text" id="address">
-    <button type="submit">SEARCH ADDRESS</button>
+  <form id="search">
+    <div>
+      <p>X</p>
+      <input type="text" id="x-coord">
+    </div>
+    <div>
+      <p>Y</p>
+      <input type="text" id="y-coord">
+    </div>
+    <br><br>
+    <button type="submit">SEARCH COORDINATES</button>
+  </form>
+  <form id="my-home">
+    <button type="submit">MY HOME</button>
   </form>
 </body>
 </html>
